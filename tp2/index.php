@@ -12,41 +12,38 @@
     <form action="">
         <div>
             <label>Nom: </label>
-            <input type="text">
+            <input type="text" name="nom">
         </div>
         <div>
             <label>Prenom: </label>
-            <input type="text">
+            <input type="text" name="prenom">
         </div>
         <div>
             <label>classe: </label>
-            <input type="text">
+            <input type="text" name="classe">
         </div>
-        <div>
-            <label>Nom: </label>
-            <input type="text">
-        </div>
+
         <div>
             <label for="">Sexe: </label>
             <span>Home</span>
-            <input type="radio">
+            <input type="radio" name="sexe" value="homme">
             <span>Femme</span>
-            <input type="radio">
+            <input type="radio" name="sexe" value="femme">
         </div>
         <div>
             <label for="">Option: </label>
             <span>langue</span>
-            <input type="checkbox">
+            <input type="checkbox" name="option[]" value="langue">
             <span>Dessin</span>
-            <input type="checkbox">
+            <input type="checkbox" name="option[]" value="Dessin">
             <span>Musique</span>
-            <input type="checkbox">
+            <input type="checkbox" name="option[]" value="Musique">
             <span>Scientifique</span>
-            <input type="checkbox">
+            <input type="checkbox" name="option[]" value="Scientifiques">
         </div>
         <div>
             <label for="Affich_Inscipt.php">journée</label>
-            <select name="" id="">
+            <select name="journe">
                 <option value="l">Lundi</option>
                 <option value="md">Mardi</option>
                 <option value="mc">Mercredi</option>
