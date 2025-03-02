@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Inscription des eleves</h1>
+    <form action="Affich_Inscipt.php" method="post">
+      <div>
+        <label>Nom: </label>
+        <input type="text" name="nom" />
+      </div>
+      <div>
+        <label>Prenom: </label>
+        <input type="text" name="prenom" />
+      </div>
+      <div>
+        <label>classe: </label>
+        <input type="text" name="classe" />
+      </div>
+
+      <div>
+        <label>Sexe: </label>
+        <span>Home</span>
+        <input type="radio" name="sexe" value="homme" />
+        <span>Femme</span>
+        <input type="radio" name="sexe" value="femme" />
+      </div>
+      <div>
+        <label>Option: </label>
+        <span>langue</span>
+        <input type="checkbox" name="option[]" value="langue" />
+        <span>Dessin</span>
+        <input type="checkbox" name="option[]" value="Dessin" />
+        <span>Musique</span>
+        <input type="checkbox" name="option[]" value="Musique" />
+        <span>Scientifique</span>
+        <input type="checkbox" name="option[]" value="Scientifiques" />
+      </div>
+      <div>
+        <label>journée</label>
+        <select name="journe">
+          <option value="Lundi">Lundi</option>
+          <option value="Mardi">Mardi</option>
+          <option value="Mercredi">Mercredi</option>
+          <option value="Jeudi">Jeudi</option>
+          <option value="Vendredi">Vendredi</option>
+          <option value="Samedi">Samedi</option>
+          <option value="Dimanche">Dimanche</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
+
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    color: red;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+
+  input {
+    border: 1px solid green;
+    outline: none;
+  }
+
+  form {
+    line-height: 2;
+  }
+</style>
