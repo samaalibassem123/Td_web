@@ -7,21 +7,26 @@
   </head>
   <body>
     <h1>Veuillez remplir tous les champs</h1>
-    <form action="post">
+    <form action="server.php" method="post">
       <div>
-        <label for="">Email</label>
+        <label>Nom</label>
+        <input type="text" name="nom" />
+      </div>
+
+      <div>
+        <label>Email</label>
         <input type="text" name="mail" />
       </div>
       <div>
-        <label for="">Age</label>
+        <label>Age</label>
         <input type="text" name="age" />
       </div>
       <div>
-        <label for="">Site web</label>
+        <label>Site web</label>
         <input type="text" name="site" />
       </div>
       <div>
-        <label for="">Message</label>
+        <label>Message</label>
         <textarea name="message"></textarea>
       </div>
       <input type="submit" value="envoyer" />
