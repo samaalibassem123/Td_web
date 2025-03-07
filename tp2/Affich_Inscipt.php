@@ -32,10 +32,10 @@ if (
     //close ul
     echo "</ul>";
 } else { ?>
-<script>
-alert("remplir tous les champs !")
-window.location.replace("index.html")
-</script>
-<?php
+    <script>
+        alert("remplir tous les champs !")
+        window.location.replace("index.html")
+    </script>
+    <?php
 }
 ?>
