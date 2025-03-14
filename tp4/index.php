@@ -14,13 +14,13 @@
 <body>
     <main>
         <!--Ajout etudiant-->
-        <form action="actions/ajout.php" class="form-ajout">
-            <input type="text" placeholder="Matricule" required />
-            <input type="text" placeholder="NomEtud" required />
-            <input type="text" placeholder="PrenomEtud" required />
-            <input type="text" placeholder="Genre" required />
-            <input type="text" placeholder="Ville" required />
-            <input type="text" placeholder="Mail" required />
+        <form action="actions/ajout.php" class="form-ajout" method="get">
+            <input type="text" placeholder="Matricule" required name="mat" />
+            <input type="text" placeholder="NomEtud" required name="nom" />
+            <input type="text" placeholder="PrenomEtud" required name="prenom" />
+            <input type="text" placeholder="Genre" required name="genre" />
+            <input type="text" placeholder="Ville" required name="ville" />
+            <input type="text" placeholder="Mail" required name="mail" />
             <input type="submit" value="Ajouter" required />
         </form>
         <div class="table-container">

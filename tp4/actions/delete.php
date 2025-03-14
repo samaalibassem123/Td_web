@@ -1,6 +1,6 @@
 <?php
 
-include_once "../connexion.php";
+require "../connexion.php";
 
 try {
     $mat = $_GET["mat"];
