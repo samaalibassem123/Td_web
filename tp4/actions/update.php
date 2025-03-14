@@ -2,7 +2,7 @@
 
 require "../connexion.php";
 
-$mat = htmlspecialchars($_POST['mat']);
+$mat = htmlspecialchars($_GET['mat']);
 
 $nom = htmlspecialchars($_POST['nom']);
 $prenom = htmlspecialchars($_POST['prenom']);

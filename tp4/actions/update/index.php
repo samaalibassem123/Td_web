@@ -8,7 +8,9 @@
 </head>
 
 <body>
-    <form action="../update.php" method="post">
+    <form action="../update.php?mat=<?php
+    echo $_GET["mat"];
+    ?>" method="post">
         <input type="text" value="<?php
         echo $_GET["mat"];
         ?>" name="mat" disabled>
