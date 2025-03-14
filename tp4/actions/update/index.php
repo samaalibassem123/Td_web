@@ -8,25 +8,25 @@
 </head>
 
 <body>
-    <form action="../update.php">
-        <input type="text" placeholder="mat : <?php
+    <form action="../update.php" method="post">
+        <input type="text" value="<?php
         echo $_GET["mat"];
-        ?>" required>
+        ?>" name="mat" disabled>
         <input type="text" placeholder="nom : <?php
         echo $_GET["nom"];
-        ?>" required>
+        ?>" required name="nom">
         <input type="text" placeholder="prenom : <?php
         echo $_GET["prenom"];
-        ?>" required>
+        ?>" required name="prenom">
         <input type="text" placeholder="genre : <?php
         echo $_GET["genre"];
-        ?>" required>
+        ?>" required name="genre">
         <input type="text" placeholder="ville : <?php
         echo $_GET["ville"];
-        ?>" required>
+        ?>" required name="ville">
         <input type="text" placeholder="mail : <?php
         echo $_GET["mail"];
-        ?>" required>
+        ?>" required name="mail">
         <input type="submit" value="Update">
     </form>
 </body>
