@@ -66,7 +66,9 @@
                 </td>
                 <!--UPDATE FORM-->
                 <td>
-                    <form action="actions/update.php?mat=<?php echo $row->matricule; ?>" method="post">
+                    <form
+                        action="actions/update.php?mat=<?php echo $row->matricule; ?>&nom=<?php echo $row->nom; ?>&prenom=<?php echo $row->prenom; ?>&genre=<?php echo $row->genre; ?>&ville=<?php echo $row->ville; ?>&mail=<?php echo $row->mail; ?>"
+                        method="post">
                         <input type="submit" value="update" class="update" />
                     </form>
                 </td>
@@ -95,7 +97,9 @@
                 </td>
                 <!--UPDATE FORM-->
                 <td>
-                    <form action="actions/update.php?mat=<?php echo $row->matricule; ?>" method="post">
+                    <form
+                        action="actions/update.php?mat=<?php echo $row->matricule; ?>&nom=<?php echo $row->nom; ?>&prenom=<?php echo $row->prenom; ?>&genre=<?php echo $row->genre; ?>&ville=<?php echo $row->ville; ?>&mail=<?php echo $row->mail; ?>"
+                        method="post">
                         <input type="submit" value="update" class="update" />
                     </form>
                 </td>
